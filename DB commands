@@ -1,0 +1,37 @@
+
+Creates table for tv shows
+
+CREATE TABLE tv_shows (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    genre VARCHAR(100),
+    description TEXT,
+    year INTEGER
+);
+
+This will insert Seinfeld
+
+INSERT INTO TV_Shows (title, genre, description, year)
+VALUES ('Seinfeld', 'Comedy', 'A sitcom about nothing', 1989);
+
+
+Create the table for epsiodes
+
+CREATE TABLE episodes (
+    id SERIAL PRIMARY KEY,
+    show_id INTEGER REFERENCES tv_shows(show_id),
+    episode_number INTEGER,
+    title VARCHAR(255) NOT NULL,
+    netflix_id INTEGER
+);
+
+
+
+the command for scripts
+
+CREATE TABLE scripts (
+    id SERIAL PRIMARY KEY,
+    episode_id INTEGER REFERENCES episodes(episode_id),
+    text TEXT,
+    language VARCHAR(50)
+);

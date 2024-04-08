@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <h1>LangCat</h1>
       <h2>Language Learning Through Television</h2>
-      <Link href="/users">Users</Link>
+      <Link href="/shows">Shows</Link>
       <ProductCard></ProductCard>
     </main>
   )
