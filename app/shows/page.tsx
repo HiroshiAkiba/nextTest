@@ -7,7 +7,7 @@ const Shows = () => {
         <>
             <h1>TV Shows</h1>
             <ul>
-                {shows.map(show => <li><a href="/episodes">key={show}</a></li>)}
+                {shows.map(show => <li key="a"><a href="/episodes">{show}</a></li>)}
             </ul>
         </>
       )

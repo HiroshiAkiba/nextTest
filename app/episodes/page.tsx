@@ -8,7 +8,7 @@ const Episodes = () => {
         <>
             <h1>Episodes</h1>
             <ul>
-                {episodes.map(episode => <li><a href="/users">key={episode}</a></li>)}
+                {episodes.map(episode => <li key="a"><a href="/users">{episode}</a></li>)}
                 <br></br>
             </ul>
         </>
