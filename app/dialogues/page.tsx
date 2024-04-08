@@ -35,7 +35,7 @@ const page = () => {
         <>
             <h1>Episodes</h1>
             <ul>
-                {dialogues.map(dialogue => <li><a href="/https://www.netflix.com/watch/80132845?t=115">{dialogue}</a></li>)}
+                {dialogues.map(dialogue => <li><a href="/https://www.netflix.com/watch/80132845?t=115">key={dialogue}</a></li>)}
             </ul>
         </>
       )
